@@ -92,7 +92,7 @@ class ScrollScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
+      body: ListView.separated(
         itemCount: numberList.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
@@ -104,6 +104,9 @@ class ScrollScreen extends StatelessWidget {
                   style: const TextStyle(fontSize: 50)),
             ),
           );
+        },
+        separatorBuilder: (BuildContext context, int index) {
+          return const Divider();
         },
       ),
     );
