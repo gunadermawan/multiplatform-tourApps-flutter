@@ -9,8 +9,7 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: SingleChildScrollView(
+      body: SingleChildScrollView(
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -112,6 +111,6 @@ class DetailScreen extends StatelessWidget {
           )
         ],
       )),
-    ));
+    );
   }
 }
