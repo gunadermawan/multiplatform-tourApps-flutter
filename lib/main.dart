@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tour/login.dart';
 import 'package:tour/main_screen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wisate',
       theme: ThemeData(),
-      home: const MainScreen(),
+      home: const LoginScreen(),
     );
   }
 }
