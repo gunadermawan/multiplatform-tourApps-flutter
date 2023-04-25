@@ -3,13 +3,18 @@ import 'package:tour/detail_screen.dart';
 import 'package:tour/model/tourismm_place.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+  final String mail;
+
+  const MainScreen({
+    Key? key,
+    required this.mail,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Wisata Bandung'),
+          title: Text('welcome, $mail'),
         ),
         body: ListView.builder(
           itemBuilder: (context, index) {

@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
           _isError = false;
           // Navigate to the next screen on successful login
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const MainScreen();
+            return MainScreen(mail: email,);
           }));
         } else {
           _isError = true;
